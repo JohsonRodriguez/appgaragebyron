@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SIAVE</string>
+    <string name="usuario_lbl">Usuario</string>
+    <string name="password_lbl">Contraseña</string>
+    <string name="ingresar_lbl">INGRESAR</string>
+    <string name="signin_lbl">Inicie su sesión</string>
+    <string name="welcome_lbl">¡Bienvenido!</string>
+</resources>

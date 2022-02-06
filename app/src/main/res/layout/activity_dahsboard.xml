@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff0000"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Dahsboard">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="CONDUCTOR TIENE BLOQUEO DE INGRESO"
+        android:textColor="#FFFFFF"
+        android:textSize="47dp"  />
+    <TextView
+        android:id="@+id/tvreturn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="Volver a registrar otro vehiculo"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp" />
+</LinearLayout>

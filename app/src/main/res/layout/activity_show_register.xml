@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/fondo"
+    tools:context=".ShowRegister">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="652dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:radius="100dp">
+         <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="Registros del día de hoy"
+            android:textColor="@color/greenbyron"
+            android:textSize="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview2"
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            android:padding="10dp"></androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:id="@+id/tvolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="Volver"
+            android:textColor="@color/greenbyron"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

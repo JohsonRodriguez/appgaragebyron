@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/fondo"
+    tools:context=".ShowPerson">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="752dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:radius="100dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="332dp"
+            android:layout_height="156dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toStartOf="@+id/imageMore"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/tdni"
+                android:layout_width="110dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="DNI: "
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#03215F"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tv_dni"
+                android:layout_width="180dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="126dp"
+                android:layout_marginTop="4dp"
+                android:text=""
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tconductor"
+                android:layout_width="110dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:text="CONDUCTOR:"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#03215F"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/coverImage"
+                app:layout_constraintTop_toBottomOf="@+id/tdni" />
+
+            <TextView
+                android:id="@+id/tv_conductor"
+                android:layout_width="180dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="126dp"
+                android:layout_marginTop="40dp"
+                android:text=""
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toEndOf="@+id/coverImage"
+                app:layout_constraintTop_toBottomOf="@+id/tdni" />
+
+            <TextView
+                android:id="@+id/ttipo"
+                android:layout_width="110dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="80dp"
+                android:text="CARGO:"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#03215F"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/coverImage"
+                app:layout_constraintTop_toBottomOf="@+id/tdni" />
+
+            <TextView
+                android:id="@+id/tv_tipo"
+                android:layout_width="180dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="126dp"
+                android:layout_marginTop="80dp"
+                android:text=""
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toEndOf="@+id/coverImage"
+                app:layout_constraintTop_toBottomOf="@+id/tdni" />
+            <TextView
+                android:id="@+id/testado"
+                android:layout_width="110dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="120dp"
+                android:text="ESTADO:"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#03215F"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/coverImage"
+                app:layout_constraintTop_toBottomOf="@+id/tdni" />
+
+            <TextView
+                android:id="@+id/tv_estado"
+                android:layout_width="180dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="126dp"
+                android:layout_marginTop="120dp"
+                android:text=""
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toEndOf="@+id/coverImage"
+                app:layout_constraintTop_toBottomOf="@+id/tdni" />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="Seleccione el vehiculo:"
+            android:textColor="@color/greenbyron"
+            android:textSize="16dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:padding="10dp"></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>
